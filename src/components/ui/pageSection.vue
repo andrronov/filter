@@ -9,8 +9,8 @@
     ]"
   >
     <div
-      :class="isPopolam ? 'h-1/3 mt-4' : 'h-full'"
-      class="relative w-full md:w-1/2 px-4 flex items-center"
+      :class="isPopolam ? 'h-1/3 mt-8 items-center' : 'h-full'"
+      class="relative w-full flex items-start md:w-1/2 px-4"
     >
       <slot name="l" />
     </div>
