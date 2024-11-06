@@ -48,11 +48,6 @@
       </footer>
     </section>
   </page-wrapper>
-  <popup-component
-    v-if="showCookies"
-    @close="showCookies = false"
-    class="z-50"
-  />
 </template>
 
 <script setup>
@@ -62,7 +57,6 @@ import textTitle from "../components/ui/textTitle.vue";
 import textText from "../components/ui/textText.vue";
 import downloadButtons from "../components/ui/downloadButtons.vue";
 import pageSection from "../components/ui/pageSection.vue";
-import popupComponent from "../components/ui/popup.vue";
 import { footerMenu } from "../libs/constants";
 import { ref, shallowRef } from "vue";
 import { useStorage } from "@vueuse/core";
@@ -103,8 +97,6 @@ const landingItems = shallowRef([
     img: "/filter/img/balance.png",
   },
 ]);
-
-const showCookies = useStorage("showCookies", true);
 </script>
 
 <style></style>
